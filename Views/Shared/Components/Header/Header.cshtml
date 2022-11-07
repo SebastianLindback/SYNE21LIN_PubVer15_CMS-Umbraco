@@ -1,0 +1,24 @@
+@inherits UmbracoViewPage<IHeaderProps>
+
+@if (@Model.HeaderImage != null)
+{
+    <style>
+        .headerImage {
+            background-image: url(@Model.HeaderImage.Url(mode: UrlMode.Absolute));
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+        }
+    </style>
+}
+
+<!-- Header-->
+<header class="bg-dark py-5 headerImage">
+    <div class="container py-5 my-5 ">
+        <div class=" text-center text-white">
+            <h1 class="display-4 fw-bolder">@Model.PageTitle</h1>
+            <p class="lead text-white mb-5">@Model.Subtitle</p>
+        </div>
+
+    </div>
+</header>

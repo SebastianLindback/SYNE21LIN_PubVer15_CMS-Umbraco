@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ListingsPage>
+@{
+    Layout = "Master.cshtml";
+}
+
+@await Component.InvokeAsync("Header")
+
+
+
+@await Component.InvokeAsync("Listings")
