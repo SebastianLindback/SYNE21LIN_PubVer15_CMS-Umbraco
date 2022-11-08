@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<CMS.ContactDTO>
+
+
+@using (Html.BeginUmbracoForm("contactSubmit", "ContactSurface"))
+ {
+   <div class="col-6 text-white mx-auto">
+    <label for="Name">Ange ditt namn</label>
+    <input type="text" asp-for="Name" />
+    <br />
+    <label for="Email">Ange din e-postadress</label>
+    <input type="email" asp-for="Email" />
+    <br />
+    <label for="Message">Ange ditt meddelande</label>
+    <input type="text" asp-for="Message" />
+    <br />
+    <input type="submit" value="Skicka"/>
+    </div>
+ }
+
