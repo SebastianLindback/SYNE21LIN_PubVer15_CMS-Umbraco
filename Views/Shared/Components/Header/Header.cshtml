@@ -1,10 +1,10 @@
 @inherits UmbracoViewPage<IHeaderProps>
 
-@if (@Model.HeaderImage != null)
+@if (!string.IsNullOrEmpty( @Model.ImageLink!.Url))
 {
     <style>
         .headerImage {
-            background-image: url(@Model.HeaderImage.Url(mode: UrlMode.Absolute));
+            background-image: url(@Model.ImageLink.Url);
             background-position: center;
             background-size: cover;
             width: 100%;

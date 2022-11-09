@@ -58,12 +58,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContent => global::Umbraco.Cms.Web.Common.PublishedModels.BasicContentProps.GetMainContent(this, _publishedValueFallback);
 
 		///<summary>
-		/// Header Image: Image for the Header
+		/// ImageLink
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("headerImage")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HeaderImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProps.GetHeaderImage(this, _publishedValueFallback);
+		[ImplementPropertyType("imageLink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link ImageLink => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProps.GetImageLink(this, _publishedValueFallback);
 
 		///<summary>
 		/// Page Title: Title for the Header

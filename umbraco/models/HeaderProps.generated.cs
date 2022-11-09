@@ -22,10 +22,10 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>Header Props</summary>
 	public partial interface IHeaderProps : IPublishedElement
 	{
-		/// <summary>Header Image</summary>
+		/// <summary>ImageLink</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.MediaWithCrops HeaderImage { get; }
+		global::Umbraco.Cms.Core.Models.Link ImageLink { get; }
 
 		/// <summary>Page Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
@@ -70,17 +70,17 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// Header Image: Image for the Header
+		/// ImageLink
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("headerImage")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HeaderImage => GetHeaderImage(this, _publishedValueFallback);
+		[ImplementPropertyType("imageLink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link ImageLink => GetImageLink(this, _publishedValueFallback);
 
-		/// <summary>Static getter for Header Image</summary>
+		/// <summary>Static getter for ImageLink</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.MediaWithCrops GetHeaderImage(IHeaderProps that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(publishedValueFallback, "headerImage");
+		public static global::Umbraco.Cms.Core.Models.Link GetImageLink(IHeaderProps that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Link>(publishedValueFallback, "imageLink");
 
 		///<summary>
 		/// Page Title: Title for the Header

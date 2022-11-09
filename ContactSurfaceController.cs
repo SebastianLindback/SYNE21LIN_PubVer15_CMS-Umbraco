@@ -70,7 +70,6 @@ namespace CMS
                 data.Name = contactForm.Name;
                 data.Email = contactForm.Email;
                 data.Message = contactForm.Message;
-
                 scope.Database.Insert(data);
                 scope.Complete();
             }
